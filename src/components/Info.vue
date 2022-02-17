@@ -28,11 +28,13 @@ import Picture from './Picture.vue'
 
 export default {
   name: 'Info',
+  props: {
+    email: String
+  },
   data() {
     return {
       esta_trabalhando: false,
       mostrar_email: false,
-      email: 'eric@email.com',
       meu_link: 'http://www.google.com',
       texto_botao: 'Mostrar Email',
       technolgies: [
